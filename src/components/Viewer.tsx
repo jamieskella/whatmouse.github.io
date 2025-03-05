@@ -9,11 +9,11 @@ export default function Viewer() {
   return (
     <Canvas shadows dpr={[1, 2]} camera={{ fov: 50 }}>
       <Suspense fallback={null}>
-        <Stage preset="soft" intensity={1} environment="studio">
-          <Model rotation={[0, 0.1, 0.25]} />
+        <Stage preset="soft" environment="studio" adjustCamera={false}>
+          <Model rotation={[0.15, 0.3, 0.5]} scale={0.035} />
         </Stage>
       </Suspense>
-      <OrbitControls ref={ref} autoRotate enableZoom={false} />
+      <OrbitControls ref={ref} autoRotate={true} enableZoom={false} />
     </Canvas>
   );
 }
