@@ -13,7 +13,13 @@ export default function Viewer() {
           <Model rotation={[0.15, 0.3, 0.5]} scale={0.035} />
         </Stage>
       </Suspense>
-      <OrbitControls ref={ref} autoRotate={true} enableZoom={false} />
+      <OrbitControls
+        ref={ref}
+        autoRotate={true}
+        enableRotate={false}
+        enablePan={false}
+        enableZoom={false}
+      />
     </Canvas>
   );
 }
