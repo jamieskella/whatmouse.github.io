@@ -1,5 +1,6 @@
 import "./App.css";
 import Logo from "./assets/sub-optimum.svg";
+import { ScrambleText } from "./components/ScrambleText";
 import Viewer from "./components/Viewer";
 function App() {
   return (
@@ -11,12 +12,14 @@ function App() {
         </div>
 
         <pre>
-          {`{
+          <ScrambleText
+            text={`{
   "Chassis": "6.1 grams",
   "DA V3 Pro PCB": "8.6 grams",
   "TJ Battery": "5.1 grams",
   "Sub20 Gross Weight": "19.8 grams",
 }`}
+          />
         </pre>
       </div>
 
@@ -28,11 +31,13 @@ function App() {
         <div className="flex flex-col md:flex-row gap-8">
           <div className="flex flex-col gap-6 basis-1/2">
             <pre>
-              {`{
+              <ScrambleText
+                text={`{
   "description": {
     "tone": "edgy 1990s PlayStation ad",
   }
 }`}
+              />
             </pre>
 
             <p className="uppercase font-bold">
@@ -133,12 +138,15 @@ function App() {
         </div>
 
         <pre>
-          {`{
+          <ScrambleText
+            step={6}
+            text={`{
   "terms": {
     "text": "You're using this website and the engineering marvel it promotes with no guarantees; you may not end up at the Majors using it. But you might if you use it with a glass pad. Don't sell the Sub-Optimum 1.0 design as your own — that would be uncool. Whatmouse.xyz doesn’t collect, store or distribute any data on your visit to this website — your secrets are safe with us. If you buy a print, rest assured it is sent in packaging that you could suplex into oblivion and it would still survive. It's not made of mere mortal stuff. It's tougher than you will ever be. This website comes with no warranties, so no whining  — you're in the Sub20 club now; get a teaspoon of concrete into ya."
   }
 }
 `}
+          />
         </pre>
       </div>
     </>
