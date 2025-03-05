@@ -5,7 +5,7 @@ import Viewer from "./components/Viewer";
 function App() {
   return (
     <>
-      <div className="flex flex-col space-y-16 max-w-screen-md px-4 md:px-8 mx-auto py-16">
+      <div className="flex flex-col space-y-8 max-w-screen-md px-4 md:px-8 mx-auto py-16">
         <div className="flex gap-16">
           <img src={Logo} alt="Sub Optimum" width={280} />
           <div className="h-0.25 min-h-0.25 bg-[#FFE684] w-full self-end"></div>
