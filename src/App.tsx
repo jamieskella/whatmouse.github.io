@@ -1,7 +1,7 @@
-import "./App.css";
 import Logo from "./assets/sub-optimum.svg";
 import { ScrambleText } from "./components/ScrambleText";
 import Viewer from "./components/Viewer";
+
 function App() {
   return (
     <>
@@ -23,7 +23,7 @@ function App() {
         </pre>
       </div>
 
-      <div className="w-full h-180 -my-48">
+      <div className="w-full h-180 -mb-48 -mt-32">
         <Viewer />
       </div>
 
@@ -149,6 +149,7 @@ function App() {
           />
         </pre>
       </div>
+      <div className="bg"></div>
     </>
   );
 }

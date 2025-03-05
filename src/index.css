@@ -14,7 +14,6 @@ body,
   padding: 0;
   box-sizing: border-box;
   min-height: 100vh;
-  background-image: url(./assets/noise.png);
   color: #e5e5e5;
   font-family: "Geist";
   font-style: normal;
@@ -24,7 +23,8 @@ body,
 }
 
 body {
-  background: radial-gradient(77.5% 43.15% at 0% 0%, #393939 0%, #4a4a4a 100%);
+  /* background: radial-gradient(77.5% 43.15% at 0% 0%, #393939 0%, #4a4a4a 100%); */
+  background-color: #292929;
 }
 
 pre {
@@ -37,4 +37,56 @@ pre {
   color: #a4a4a4;
   word-wrap: break-word;
   white-space: pre-wrap;
+}
+
+.bg {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  width: 200%;
+  height: 200vh;
+  background: transparent url("/noise-transparent.png") repeat 0 0;
+  background-repeat: repeat;
+  animation: bg-animation 1s infinite;
+  opacity: 0.9;
+  visibility: visible;
+  z-index: -1;
+}
+
+@keyframes bg-animation {
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-5%, -5%);
+  }
+  20% {
+    transform: translate(-10%, 5%);
+  }
+  30% {
+    transform: translate(5%, -10%);
+  }
+  40% {
+    transform: translate(-5%, 15%);
+  }
+  50% {
+    transform: translate(-10%, 5%);
+  }
+  60% {
+    transform: translate(15%, 0);
+  }
+  70% {
+    transform: translate(0, 10%);
+  }
+  80% {
+    transform: translate(-15%, 0);
+  }
+  90% {
+    transform: translate(10%, 5%);
+  }
+  100% {
+    transform: translate(5%, 0);
+  }
 }

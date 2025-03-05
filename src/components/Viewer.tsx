@@ -54,7 +54,17 @@ export default function Viewer() {
         }}
       >
         <Suspense fallback={null}>
-          <Stage preset="soft" environment="studio" adjustCamera={false}>
+          <Stage
+            preset="soft"
+            environment="studio"
+            adjustCamera={false}
+            intensity={1.0}
+            shadows={{
+              type: "contact",
+              opacity: 0.75,
+              offset: 0.5,
+            }}
+          >
             <Model rotation={[0.15, 0.3, 0.5]} scale={0.035} />
           </Stage>
         </Suspense>
