@@ -16,7 +16,7 @@ export default function Viewer() {
       <OrbitControls
         ref={ref}
         autoRotate={true}
-        enableRotate={false}
+        enableRotate={true}
         enablePan={false}
         enableZoom={false}
       />
