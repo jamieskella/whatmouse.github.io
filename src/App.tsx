@@ -96,7 +96,7 @@ function App() {
 
           <div className="flex flex-col gap-6 basis-1/2">
             <a
-              href="https://makerworld.com/en/@jamieskella"
+              href="https://makerworld.com/en/models/1180234-sub-optimum-1-0-mouse-zeromouse-inspired"
               className="border-b py-4 border-[#FFE684] uppercase text-[#FFE684] font-bold underline-offset-8 justify-between flex gap-4 items-center"
               target="_blank"
             >
